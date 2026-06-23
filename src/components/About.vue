@@ -22,19 +22,14 @@ const principles = [
           >
             <p class="text-sm font-semibold uppercase tracking-widest text-emerald-400">About</p>
             <h2 class="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
-              Engineer who turns ambiguity into shipped product.
+                Dedicated to crafting business-driven software solutions
             </h2>
             <div class="mt-6 space-y-4 text-slate-300">
               <p>
-                I'm a full-stack engineer with 8+ years building products used by millions —
-                from real-time analytics platforms to payment SDKs and developer tooling.
-                I've owned systems end-to-end, from architecture diagrams to on-call pages.
+                With over 5 years of experience in full-stack development, I specialize in building secure, scalable applications using PHP, Laravel, and modern JavaScript frameworks like Vue.js, React, and Next.js. From developing cross-border payment gateways (Paycell) and digital payment platforms (Wafacash) to maintaining enterprise SaaS ecosystems and architecting backend systems for NEO banking apps (Happi Money), I focus on delivering robust software that meets complex business demands.
               </p>
               <p>
-                I care about the boring parts that make products great: observability,
-                testing, graceful failure, and code that the next engineer can extend
-                confidently. I thrive in small, high-trust teams that move fast without
-                breaking trust with users.
+                I am deeply committed to computer science and programming, driven by the goal of creating impactful, business-driven solutions. I thrive in collaborative environments where I can apply strong problem-solving abilities and bring innovative ideas to the table. My ambition is to advance my skills while contributing effectively to high-trust teams and delivering technical excellence that drives real value for users and businesses.
               </p>
             </div>
           </motion.div>

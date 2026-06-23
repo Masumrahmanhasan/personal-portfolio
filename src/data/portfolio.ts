@@ -19,7 +19,6 @@ export type Project = {
     tech: string[]
     metrics: { label: string; value: string }[]
     liveUrl: string
-    codeUrl: string
     icon: LucideIcon
     featured?: boolean
 }
@@ -27,8 +26,8 @@ export type Project = {
 export const profile = {
     name: 'Md Akash',
     role: 'Senior Software Engineer',
-    tagline: 'I build reliable, scalable products that users love and teams trust.',
-    location: 'Dhaka Bangladesh · Open to remote',
+    tagline: 'Deeply committed to building impactful, business-driven software solutions.',
+    location: 'Dhaka, Bangladesh · Open to remote',
     email: 'masumrahmanhasan@gmail.com',
     phone: '+8801537109094',
     resumeUrl: '#',
@@ -38,9 +37,9 @@ export const profile = {
     ],
     stats: [
         { label: 'Years experience', value: '5+' },
-        { label: 'Products shipped', value: '40+' },
-        { label: 'Users reached', value: '12M+' },
-        { label: 'Open-source stars', value: '5.2k' },
+        { label: 'Products shipped', value: '10+' },
+        { label: 'Remote work', value: '3+ years' },
+        { label: 'Tech stack', value: 'Full Stack' },
     ],
 }
 
@@ -65,109 +64,100 @@ export const skills = [
 
 export const projects: Project[] = [
     {
-        id: 'pulse',
-        title: 'Pulse Analytics',
-        tagline: 'Real-time product analytics platform',
+        id: 'paycell',
+        title: 'Paycell',
+        tagline: 'Send Money Abroad Fast & Secure',
         description:
-            'A high-throughput analytics platform processing 2B+ events per day. Built a streaming ingestion pipeline and a sub-second query engine powering live dashboards for 300+ enterprise teams.',
-        image: '/projects/dashboard.jpg',
-        tech: ['Go', 'Kafka', 'ClickHouse', 'React', 'AWS'],
+            'Developed a fast, secure and affordable cross-border remittance service enabling users in the EU/UK to send money abroad with transparent pricing, real-time status tracking and regulatory compliance.',
+        image: '/projects/paycell.svg',
+        tech: ['PHP', 'Laravel', 'Vue.js'],
         metrics: [
-            { label: 'Events/day', value: '2B+' },
-            { label: 'Query p99', value: '180ms' },
-            { label: 'Teams', value: '300+' },
+            { label: 'Region', value: 'EU/UK' },
+            { label: 'Status', value: 'Live' },
         ],
         liveUrl: '#',
-        codeUrl: '#',
+        icon: Smartphone,
+        featured: true,
+
+    },
+    {
+        id: 'wafacash',
+        title: 'Wafacash',
+        tagline: 'Digital Payment & Cross-Border Remittance Platform',
+        description:
+            'A leading proximity-finance provider offering fast, secure and inclusive financial services across Morocco and Africa. Services include national and international money transfers, mobile payment accounts, bill payments, and prepaid cards.',
+        image: '/projects/wafacash.png.webp',
+        tech: ['Laravel', 'Vue.js', 'FilamentPHP'],
+        metrics: [
+            { label: 'Region', value: 'Morocco/Africa' },
+            { label: 'Since', value: '1991' },
+        ],
+        liveUrl: '#',
+        icon: ShoppingBag,
+        featured: true,
+    },
+    {
+        id: 'funnelliner',
+        title: 'Funnelliner',
+        tagline: 'Make your Website, Sales Funnel & Automation',
+        description:
+            'Developed comprehensive APIs for a SaaS application, engineered advanced frontend hooks and reusable components in Next.js, and designed a robust backend admin panel using Vue.js for streamlined administration and management.',
+        image: '/projects/funnelliner.png',
+        tech: ['Next.js', 'Vue.js', 'API', 'SaaS'],
+        metrics: [
+            { label: 'Frontend', value: 'Next.js/Vue.js' },
+            { label: 'Role', value: 'Full Stack' },
+        ],
+        liveUrl: '#',
         icon: LayoutDashboard,
         featured: true,
     },
     {
-        id: 'vault',
-        title: 'Vault Pay',
-        tagline: 'PCI-compliant mobile payments SDK',
+        id: 'xdesk',
+        title: 'XDesk',
+        tagline: 'Efficient Support Ticket Management with Real-Time Assistance',
         description:
-            'A cross-platform payments SDK adopted by fintech apps serving 4M+ users. Designed the tokenization flow, fraud-detection hooks, and a drop-in UI that cut integration time from weeks to hours.',
-        image: '/projects/fintech.jpg',
-        tech: ['Swift', 'Kotlin', 'TypeScript', 'Rust', 'gRPC'],
+            'Enhanced the functionality of an enterprise ticketing solution to streamline issue tracking and management. Implemented critical features, including a robust permissions system to improve user access control and data security.',
+        image: '/projects/xdesk.svg',
+        tech: ['Laravel', 'React', 'Permissions'],
         metrics: [
-            { label: 'Active users', value: '4M+' },
-            { label: 'Integ. time', value: '<1 day' },
-            { label: 'Uptime', value: '99.99%' },
+            { label: 'Feature', value: 'Permissions System' },
+            { label: 'Type', value: 'Enterprise' },
         ],
         liveUrl: '#',
-        codeUrl: '#',
-        icon: Smartphone,
-        featured: true,
-    },
-    {
-        id: 'forge',
-        title: 'Forge CLI',
-        tagline: 'Developer tooling & scaffold engine',
-        description:
-            'An open-source CLI that scaffolds production-ready microservices with built-in observability, CI, and testing. 5.2k GitHub stars and used internally by several YC companies.',
-        image: '/projects/devtool.jpg',
-        tech: ['Rust', 'Go', 'Docker', 'OpenTelemetry'],
-        metrics: [
-            { label: 'GitHub stars', value: '5.2k' },
-            { label: 'Weekly installs', value: '18k' },
-            { label: 'Contributors', value: '120+' },
-        ],
-        liveUrl: '#',
-        codeUrl: '#',
-        icon: Terminal,
-        featured: true,
-    },
-    {
-        id: 'shopstream',
-        title: 'ShopStream',
-        tagline: 'Headless commerce at scale',
-        description:
-            'A headless e-commerce backend handling Black Friday traffic spikes without a hiccup. Edge-cached storefront, inventory sync, and a checkout flow that lifted conversion by 23%.',
-        image: '/projects/ecommerce.jpg',
-        tech: ['Node.js', 'GraphQL', 'PostgreSQL', 'Redis', 'AWS'],
-        metrics: [
-            { label: 'Peak RPS', value: '85k' },
-            { label: 'Conversion', value: '+23%' },
-            { label: 'GMV/yr', value: '$140M' },
-        ],
-        liveUrl: '#',
-        codeUrl: '#',
-        icon: ShoppingBag,
-    },
-    {
-        id: 'lumen',
-        title: 'Lumen AI',
-        tagline: 'RAG knowledge assistant for teams',
-        description:
-            'A retrieval-augmented assistant that indexes company docs, code, and tickets to answer engineering questions with citations. Reduced onboarding time for new hires by 40%.',
-        image: '/projects/ai.jpg',
-        tech: ['Python', 'FastAPI', 'pgvector', 'React', 'OpenAI'],
-        metrics: [
-            { label: 'Onboarding', value: '-40%' },
-            { label: 'Queries/day', value: '50k' },
-            { label: 'Latency', value: '1.2s' },
-        ],
-        liveUrl: '#',
-        codeUrl: '#',
-        icon: BrainCircuit,
-    },
-    {
-        id: 'sync',
-        title: 'SyncFlow',
-        tagline: 'Real-time collaboration engine',
-        description:
-            'A CRDT-based collaboration layer powering real-time document editing for a suite of SaaS apps. Conflict-free sync across devices with offline support and presence awareness.',
-        image: '/projects/collab.jpg',
-        tech: ['TypeScript', 'WebSockets', 'Yjs', 'Go', 'Redis'],
-        metrics: [
-            { label: 'Concurrent users', value: '10k' },
-            { label: 'Sync latency', value: '45ms' },
-            { label: 'Apps using', value: '7' },
-        ],
-        liveUrl: '#',
-        codeUrl: '#',
         icon: Users,
+        featured: false,
+    },
+    {
+        id: 'prokpi',
+        title: 'Pro KPI',
+        tagline: 'Best KPI Management Software',
+        description: 'From designing the architecture to building the platform with TALL stack, aimed to provide a better user experience for customers and increase profitability for business owners.',
+        image: '/projects/prokpi.svg',
+        tech: ['TALL Stack', 'Laravel', 'Livewire', 'Tailwind'],
+        metrics: [
+            { label: 'Stack', value: 'TALL' },
+            { label: 'Platform', value: 'Micro Jobs' },
+        ],
+        liveUrl: '#',
+        icon: Terminal,
+        featured: false,
+    },
+    {
+        id: 'happimoney',
+        title: 'Happi Money',
+        tagline: 'Banking made fastest and simple',
+        description:
+            'Creating APIs and managing the deployment of the full application was the main responsibility. Also contributed to frontend development to ensure a seamless user experience.',
+        image: '/projects/happi_money.png',
+        tech: ['PHP', 'Laravel', 'Vue.js'],
+        metrics: [
+            { label: 'Role', value: 'API & Deployment' },
+            { label: 'Type', value: 'Banking' },
+        ],
+        liveUrl: '#',
+        icon: BrainCircuit,
+        featured: false,
     },
 ]
 
@@ -183,33 +173,41 @@ export const experiences = [
     {
         type: 'work',
         role: 'Senior Software Engineer',
-        company: 'TechCorp Inc.',
-        period: '2022 - Present',
-        description: 'Lead a team of 5 engineers in building scalable microservices architecture. Reduced system latency by 40% and improved deployment frequency by 3x.',
-        highlights: ['System Design', 'Team Leadership', 'Performance Optimization'],
+        company: 'BPay (Triple-A)',
+        period: '2025 - Present',
+        description: 'Developing secure and scalable payment gateways and digital payment applications, enabling seamless online transactions, merchant integrations, and financial services automation.',
+        highlights: ['Payment Gateways', 'Digital Payments', 'Scalability'],
     },
     {
         type: 'work',
-        role: 'Software Engineer',
-        company: 'StartupXYZ',
+        role: 'Senior Software Engineer',
+        company: 'Rezzen Tech',
+        period: '2023 - 2024',
+        description: 'Maintained their SaaS product and added new features to it. Worked remotely to ensure continuous delivery and high-quality releases.',
+        highlights: ['SaaS', 'Feature Development', 'Remote'],
+    },
+    {
+        type: 'work',
+        role: 'Senior Software Engineer',
+        company: 'Happihub',
+        period: '2022 - 2023',
+        description: 'Developed the backend application for the NEO Bank app, focusing on robust architecture and reliable financial services.',
+        highlights: ['Backend Development', 'NEO Banking'],
+    },
+    {
+        type: 'work',
+        role: 'Laravel Developer',
+        company: 'Soft It Care',
         period: '2020 - 2022',
-        description: 'Built core features for a SaaS platform serving 100K+ users. Implemented real-time collaboration features and payment integrations.',
-        highlights: ['React', 'Node.js', 'AWS', 'PostgreSQL'],
-    },
-    {
-        type: 'work',
-        role: 'Junior Developer',
-        company: 'Digital Agency Co.',
-        period: '2018 - 2020',
-        description: 'Developed responsive web applications for various clients. Gained expertise in modern frontend frameworks and agile methodologies.',
-        highlights: ['JavaScript', 'Vue.js', 'CSS', 'REST APIs'],
+        description: 'Designed and developed robust web applications using the Laravel framework, incorporating modern frontend technologies like Vue.js and React. Also mentored and guided junior developers.',
+        highlights: ['Laravel', 'Vue.js', 'React', 'Mentorship'],
     },
     {
         type: 'education',
-        role: 'B.S. Computer Science',
-        company: 'University of California',
-        period: '2014 - 2018',
-        description: 'Graduated with honors. Specialized in distributed systems and machine learning.',
-        highlights: ['GPA: 3.8', 'Dean\'s List', 'CS Club President'],
+        role: 'B.Sc. in Computer Science & Engineering',
+        company: 'Dhaka International University',
+        period: '2019 - 2022',
+        description: 'Completed Bachelor of Science in Computer Science & Engineering from Dhaka International University, Dhaka, Bangladesh.',
+        highlights: ['Dhaka, Bangladesh'],
     },
 ]
