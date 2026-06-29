@@ -20,6 +20,7 @@ export type Project = {
     metrics: { label: string; value: string }[]
     liveUrl: string
     icon: LucideIcon
+    size: string
     featured?: boolean
 }
 
@@ -32,8 +33,8 @@ export const profile = {
     phone: '+8801537109094',
     resumeUrl: '#',
     socials: [
-        { label: 'GitHub', url: 'https://github.com', handle: '@Masumrahmanhasan', image: 'https://cdn.simpleicons.org/github/white' },
-        { label: 'LinkedIn', url: 'https://linkedin.com', handle: 'in/Masumrahmanhasan', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg' },
+        { label: 'GitHub', url: 'https://github.com/', handle: 'Masumrahmanhasan', image: 'https://cdn.simpleicons.org/github/white' },
+        { label: 'LinkedIn', url: 'https://linkedin.com', handle: '/in/masum-rahman-hasan-a1419a179/', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg' },
     ],
     stats: [
         { label: 'Years experience', value: '5+' },
@@ -70,12 +71,13 @@ export const projects: Project[] = [
         description:
             'Developed a fast, secure and affordable cross-border remittance service enabling users in the EU/UK to send money abroad with transparent pricing, real-time status tracking and regulatory compliance.',
         image: '/projects/paycell.svg',
-        tech: ['PHP', 'Laravel', 'Vue.js'],
+        tech: ['PHP', 'Laravel', 'Javascript', 'FilamentPHP', 'AWS', 'Docker'],
         metrics: [
             { label: 'Region', value: 'EU/UK' },
             { label: 'Status', value: 'Live' },
         ],
         liveUrl: '#',
+        size: "large",
         icon: Smartphone,
         featured: true,
 
@@ -87,12 +89,13 @@ export const projects: Project[] = [
         description:
             'A leading proximity-finance provider offering fast, secure and inclusive financial services across Morocco and Africa. Services include national and international money transfers, mobile payment accounts, bill payments, and prepaid cards.',
         image: '/projects/wafacash.png.webp',
-        tech: ['Laravel', 'Vue.js', 'FilamentPHP'],
+        tech: ['PHP', 'Laravel', 'Javascript', 'FilamentPHP', 'AWS', 'Docker'],
         metrics: [
             { label: 'Region', value: 'Morocco/Africa' },
             { label: 'Since', value: '1991' },
         ],
         liveUrl: '#',
+        size: "medium",
         icon: ShoppingBag,
         featured: true,
     },
@@ -109,6 +112,7 @@ export const projects: Project[] = [
             { label: 'Role', value: 'Full Stack' },
         ],
         liveUrl: '#',
+        size: "medium",
         icon: LayoutDashboard,
         featured: true,
     },
@@ -125,6 +129,7 @@ export const projects: Project[] = [
             { label: 'Type', value: 'Enterprise' },
         ],
         liveUrl: '#',
+        size: "small",
         icon: Users,
         featured: false,
     },
@@ -140,6 +145,7 @@ export const projects: Project[] = [
             { label: 'Platform', value: 'Micro Jobs' },
         ],
         liveUrl: '#',
+        size: "small",
         icon: Terminal,
         featured: false,
     },
@@ -156,6 +162,7 @@ export const projects: Project[] = [
             { label: 'Type', value: 'Banking' },
         ],
         liveUrl: '#',
+        size: "wide",
         icon: BrainCircuit,
         featured: false,
     },

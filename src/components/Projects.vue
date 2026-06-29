@@ -11,8 +11,8 @@ const getTags = (project) => {
 </script>
 
 <template>
-    <section id="projects" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
+    <section id="projects" class="max-w-6xl mx-auto py-24 px-6">
+        <div class="">
           <motion.div
             :initial="{ opacity: 0, y: 30 }"
             :whileInView="{ opacity: 1, y: 0 }"
@@ -33,13 +33,21 @@ const getTags = (project) => {
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)]">
               <motion.div
-                v-for="project in projects"
+                v-for="(project, index) in projects"
                 :key="project.title"
                 :initial="{ opacity: 0, y: 30 }"
                 :whileInView="{ opacity: 1, y: 0 }"
                 :viewport="{ once: true }"
                 :transition="{ duration: 0.5, delay: index * 0.1 }"
-                class="group relative rounded-3xl overflow-hidden border border-white/5 hover:border-emerald-400/30 transition-all duration-500">
+                class="group relative rounded-3xl overflow-hidden border border-white/5 hover:border-emerald-400/30 transition-all duration-500"
+                :class="project.size === 'large' 
+                ? 'md:col-span-2 md:row-span-2' 
+                : project.size === 'medium'
+                ? 'md:col-span-1 md:row-span-2'
+                : project.size === 'wide'
+                ? 'md:col-span-2 md:row-span-1'
+                : 'md:col-span-1 md:row-span-1'"
+                >
                 
                 <div class="absolute inset-0">
                   <img

@@ -78,7 +78,7 @@ import { profile } from '../data/portfolio'
                 <a
                     v-for="social in profile.socials"
                     :key="social.label"
-                    :href="social.url"
+                    :href="social.url+social.handle"
                     target="_blank"
                     rel="noreferrer"
                     class="flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/3 p-3 text-xs font-medium text-slate-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
