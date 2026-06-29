@@ -31,7 +31,7 @@ export const profile = {
     location: 'Dhaka, Bangladesh · Open to remote',
     email: 'masumrahmanhasan@gmail.com',
     phone: '+8801537109094',
-    resumeUrl: '#',
+    resumeUrl: 'https://drive.google.com/file/d/1NGoQ-sk7jpBCTtKn5HFFCnKVHNz88Pkn/view?usp=sharing',
     socials: [
         { label: 'GitHub', url: 'https://github.com/', handle: 'Masumrahmanhasan', image: 'https://cdn.simpleicons.org/github/white' },
         { label: 'LinkedIn', url: 'https://linkedin.com', handle: '/in/masum-rahman-hasan-a1419a179/', image: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg' },
